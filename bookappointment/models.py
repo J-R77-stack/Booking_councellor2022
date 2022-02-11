@@ -3,6 +3,10 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Appointment(models.Model):
+    """
+    class for appointment model in database and for
+    the appointment form.
+    """
     user = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
     name = models.CharField(max_length=30, null=True)
     appointment_date_and_time = models.DateTimeField(null=True)
