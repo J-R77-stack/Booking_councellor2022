@@ -16,7 +16,7 @@ def view_services(request):
     return render(request, 'services.html')
 
 
-def view_contact(request):
+def contact(request):
     """
     Function allows user to view the contact page
     """
