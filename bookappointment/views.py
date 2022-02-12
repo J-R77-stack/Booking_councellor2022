@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import Appointment
 from .forms import AppointmentForm
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 
 def view_home(request):
@@ -50,10 +51,12 @@ def add_appointment(request):
             appointment = form.save()
             appointment.user = request.user
             appointment.save()
+            messages.success(request, 'Appointment booked successfully.')
             return redirect('view_appointment')
         else: 
+             messages.error(request, 'Booking date is not available.')
          
-         form = AppointmentForm()
+    form = AppointmentForm()
     context = {
         'form': form
     }
