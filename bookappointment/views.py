@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Appointment
 
 
@@ -35,6 +35,16 @@ def view_blog(request):
     Function allows user to view the blog page
     """
     return render(request, 'blog.html')
+
+
+def add_appointment(request):
+    """
+    Function allows user to make an appointment
+    and add appointment to database.
+    """
+    if request.method == 'POST':
+
+     return render(request, 'add_appointment.html', context)    
 
 
 

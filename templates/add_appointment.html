@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+<section class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <section class="page-section clearfix">
+            <div class="container">
+                <div class="intro">
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">Appointment Booking Form</span>
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-8 mt-3 offset-md-2">
+                            
+                                <form method="POST" action="{% url 'add_appointment' %}" name="form">
+        
+                                    {{ form|crispy }}
+        
+        
+                                    {% csrf_token %}
+        
+        
+                                    <div class="intro-button mx-auto"><button class="btn btn-primary btn-xl"
+                                            type="submit">Book Appointment</button>
+                                    </div>
+        
+                                </form>
+                            </div>
+                            
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+{% endblock %}
