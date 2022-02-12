@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Appointment
 from .forms import AppointmentForm
+from django.contrib.auth.decorators import login_required
 
 
 def view_home(request):
@@ -37,7 +38,7 @@ def view_blog(request):
     """
     return render(request, 'blog.html')
 
-
+@login_required
 def add_appointment(request):
     """
     Function allows user to make an appointment
@@ -50,13 +51,69 @@ def add_appointment(request):
             appointment.user = request.user
             appointment.save()
             return redirect('view_appointment')
-        else: form = AppointmentForm() 
-    
+        else: 
+         
+         form = AppointmentForm()
     context = {
         'form': form
     }
 
     return render(request, 'add_appointment.html', context)    
 
+@login_required
+def view_appointment(request):
+    """
+    Function allows user to view an appointment 
+    after it's been added to the database.
+    """
+    appointments = Appointment.objects.filter(user_in=[request.user])  
+    context = {
+        'appointments': appointment
+    }  
+    return render(request, 'view_appointment.html', context)
+"""
+    Function allows user to edit an appointment 
+    after it's been added to the database.
+    """
 
+@login_required
+def edit_appointment(request, appointment_id):
+    """
+    Function allows user to edit an appointment 
+    after it's been added to the database.
+    """
+    appoint = get_object_or_404(Appointment, id=appointment_id)
+    if request.method == "POST":
+        form = AppointmentForm(request.POST, instance=appoint)
+        if form.is_valid():
+             appointment = form.save()
+             appointment.user = request.user
+             appointment.save()
+        return redirect('view_appointment')
+    form = AppointmentForm(instance=appoint)
+    context = {
+        'form': form
+    }
+    return render(request, 'edit_appointment.html', context)   
+    
 
+@login_required
+def delete_appointment(request, appointment_id):
+    """
+    Function allows user to delete an appointment 
+    after it's been added to the database.
+    """ 
+    appointment = get_object_or_404(Appointment, id=appointment_id)
+    if request.method == "POST":
+        form = AppointmentForm(request.POST, instance=appointment)
+        if appointment.delete():
+        
+            return redirect('view_appointment')
+    form = AppointmentForm(instance=appointment)
+    context = {
+        'form': form
+    }
+    return render(request, 'delete_appointment.html', context) 
+
+    
+    
