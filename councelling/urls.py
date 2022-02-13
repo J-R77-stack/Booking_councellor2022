@@ -21,3 +21,4 @@ urlpatterns = [
     path('', include('bookappointment.urls'), name='bookappointment_urls'),
     path('accounts/', include('allauth.urls')),
 ]
+

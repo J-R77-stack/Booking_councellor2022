@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Appointment
 from .forms import AppointmentForm
 from django.contrib.auth.decorators import login_required
@@ -39,6 +39,10 @@ def view_blog(request):
     """
     return render(request, 'blog.html')
 
+
+
+
+
 @login_required
 def add_appointment(request):
     """
@@ -54,7 +58,7 @@ def add_appointment(request):
             messages.success(request, 'Appointment booked successfully.')
             return redirect('view_appointment')
         else: 
-             messages.error(request, 'Booking date is not available.')
+            messages.error(request, 'Booking date is not available.')
          
     form = AppointmentForm()
     context = {
@@ -69,15 +73,13 @@ def view_appointment(request):
     Function allows user to view an appointment 
     after it's been added to the database.
     """
-    appointments = Appointment.objects.filter(user_in=[request.user])  
+    appointments = Appointment.objects.filter(user__in=[request.user]) 
     context = {
-        'appointments': appointment
+        'appointments': appointments
     }  
     return render(request, 'view_appointment.html', context)
-"""
-    Function allows user to edit an appointment 
-    after it's been added to the database.
-    """
+
+
 
 @login_required
 def edit_appointment(request, appointment_id):
@@ -92,6 +94,7 @@ def edit_appointment(request, appointment_id):
              appointment = form.save()
              appointment.user = request.user
              appointment.save()
+             messages.success(request, 'Your appointment has been updated.')
         return redirect('view_appointment')
     form = AppointmentForm(instance=appoint)
     context = {
@@ -110,7 +113,7 @@ def delete_appointment(request, appointment_id):
     if request.method == "POST":
         form = AppointmentForm(request.POST, instance=appointment)
         if appointment.delete():
-        
+            messages.success(request, 'Your appointment has been deleted.')
             return redirect('view_appointment')
     form = AppointmentForm(instance=appointment)
     context = {
