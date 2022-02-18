@@ -1,21 +1,49 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-    <!-- About-->
-    <section class="about-section text-center" id="about">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
-                    <p class="text-white-50">
-                        Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                        <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-                        The theme is open source, and you can use it for any purpose, personal or commercial.
-                    </p>
-                </div>
+<!-- About-->
+<section class="about-section text-center" id="about">
+    <div class="container px-4 px-lg-5">
+<div class="row">
+    <div class="col-sm-5" style="padding-right:30px;">
+        <img class="img-responsive" src="{% static 'assets/img/councellor.jpg' %}"  width="100%">
+    </div>
+    <div class="col-sm-7">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="text-white-50">
+                <div class="social d-flex justify-content-center">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>    
+                </h2>
+                <p class="text-white-50">
+                    Hello, My name is Mike Wilkins and i am passionate about counselling 
+                    and helping people to overcome any difficulties they may be having.
+                  I strongly believe that given the right conditions one can make significant 
+                  changes in their lives. I offer a safe, non-judgemental and confidential
+                   environment where we can explore together any difficulties you may be experiencing.  
+                </p>
             </div>
-            <img class="img-fluid" src="{% static 'assets/img/ipad.png' %}" alt="..." />
-        </div>
-    </section>
+            <div class="col-sm-6">
+                <h2 class="text-white-50">
+                <div class="social d-flex justify-content-center">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>    
+                </h2>
+                <p class="text-white-50">
+                   I have a BA Joint Honours degree in English literature, Sociology and Psychology. 
+                   I have followed the CPCAB route to qualification by completing Level 2 in Counselling Skills,
+                    Level 3 in Counselling Studies and the Level 4 Diploma in Therapeutic Counselling. 
+                    I also have an online diploma in e-counselling (online counselling)   
+                </p>
+                
+            </div>
+        </div> 
+        <a class="btn btn-primary" href="{% url 'add_appointment' %}">Book An Appointment</a>
+    </div>
+</div>
+</div>
+<br>
+</section>
 {% endblock %}
 
