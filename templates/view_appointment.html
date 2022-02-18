@@ -6,18 +6,18 @@
 <section class="masthead">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="table-responsive-sm">
-            <table class="table table-hover table-dark">
+            <table class="table table-hover table-info">
                 <thead>
-                    <tr>
+                    <tr class="table-primary">
                         <th scope="col"></th>
-                        <th scope="col">Logged in User</th>
-                        <th scope="col">Appointment id</th>
+                        <th scope="col">User</th>
+                        <th scope="col">id</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Appointment date and time </th>
+                        <th scope="col">Appointment</th>
                         <th scope="col">Number</th>
                         <th scope="col">Email</th>
-                        <th scope="col">Edit Appointment</th>
-                        <th scope="col">Delete Appointment</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,12 +31,12 @@
                         <td>{{ appointment.appointment_date_and_time }}</td>
                         <td>{{ appointment.phone_number }}</td>
                         <td>{{ appointment.email}}</td>
-                        <td>
+                        <td class="table-dark">
                             <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl"
                                     href="/edit/{{ appointment.id }}">Edit
                                     Appointment</a></div>
                         </td>
-                        <td>
+                        <td class="table-dark">
                             <div class="intro-button mx-auto"><a class="btn btn-primary btn-danger btn-xl"
                                     href="/delete/{{ appointment.id }}">Delete Appointment</a></div>
                         </td>
