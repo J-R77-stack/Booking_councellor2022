@@ -58,7 +58,7 @@ def add_appointment(request):
             messages.success(request, 'Appointment booked successfully.')
             return redirect('view_appointment')
         else: 
-            messages.error(request, 'Booking date is not available.')
+            messages.error(request, 'Booking date is not available, please try again.')
          
     form = AppointmentForm()
     context = {

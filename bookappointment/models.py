@@ -15,7 +15,7 @@ class Appointment(models.Model):
     def validate_date(appointment_date_and_time):
         
         if appointment_date_and_time < timezone.now():
-            raise ValidationError("Sorry no available appointments. Please try another day or time")
+            raise ValidationError('')
     appointment_date_and_time = models.DateTimeField(null=True,blank=True,validators=[validate_date])
 
     phone_number = models.CharField(null=True, blank=True, max_length=16)
@@ -26,10 +26,4 @@ class Appointment(models.Model):
         unique_together = ('user', 'name', 'appointment_date_and_time')
         ordering = ['-created_on']
 
-    def _str_(self):
-        """
-        Function to return model items as a string"
-        """
-        return f'User {self.user} has made an appointment \
-                  for {self.name} \
-                  for {self.appointment_date_and_time}.'    
+    
