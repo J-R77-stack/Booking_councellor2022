@@ -1,46 +1,46 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %} 
 {% load crispy_forms_tags %}
-<section class="masthead">
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-        
-            <div class="container">
-                <div class="intro">
-                    
-                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                        <h3 class="section-heading mb-4">
-                            <span class="section-heading-upper">Edit your Appointment</span>
-        
-        
-                        </h3>
-        
-                        <p><a href="{% url 'view_appointment' %}">Changed my mind, back to my Appointment</a></p>
-                        <div class="row">
-                            <div class="col-md-8 mt-3 offset-md-2">
-                                <form method="POST" name="form">
-        
-                                    {{form|crispy}}
-        
-        
-                                    {% csrf_token %}
-        
-        
-                                    <div class="intro-button mx-auto"><button class="btn btn-primary btn-xl"
-                                            type="submit">Submit edited appointment</button>
-                                    </div>
-                                </form>
-        
-                            </div>
-                        </div>
+    <section class="masthead">
+      <div
+        class="
+          container
+          px-4 px-lg-5
+          d-flex
+          h-100
+          align-items-center
+          justify-content-center
+        "
+      >
+        <div class="container">
+          <div class="intro">
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+              <h3 class="section-heading mb-4">
+                <span class="section-heading-upper">Edit your Appointment</span>
+              </h3>
+    
+              <p>
+                <a href="{% url 'view_appointment' %}"
+                  >Changed my mind, back to my Appointment</a
+                >
+              </p>
+              <div class="row">
+                <div class="col-md-8 mt-3 offset-md-2">
+                  <form method="POST" name="form">
+                    {{form|crispy}} {% csrf_token %}
+    
+                    <div class="intro-button mx-auto">
+                      <button class="btn btn-primary btn-xl" type="submit">
+                        Submit edited appointment
+                      </button>
                     </div>
+                  </form>
                 </div>
+              </div>
             </div>
-        
-        
-    </div>
-</section>
-
-
-
-{% endblock content %}
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    {% endblock content %}
+    

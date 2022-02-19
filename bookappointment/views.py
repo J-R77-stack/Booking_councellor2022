@@ -40,9 +40,6 @@ def view_blog(request):
     return render(request, 'blog.html')
 
 
-
-
-
 @login_required
 def add_appointment(request):
     """
@@ -64,8 +61,8 @@ def add_appointment(request):
     context = {
         'form': form
     }
-
     return render(request, 'add_appointment.html', context)    
+
 
 @login_required
 def view_appointment(request):
@@ -78,7 +75,6 @@ def view_appointment(request):
         'appointments': appointments
     }  
     return render(request, 'view_appointment.html', context)
-
 
 
 @login_required
@@ -119,7 +115,4 @@ def delete_appointment(request, appointment_id):
     context = {
         'form': form
     }
-    return render(request, 'delete_appointment.html', context) 
-
-    
-    
+    return render(request, 'delete_appointment.html', context)

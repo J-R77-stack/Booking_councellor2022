@@ -1,37 +1,51 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %} 
 {% load crispy_forms_tags %}
-
-<section class="masthead">
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+    
+    <section class="masthead">
+      <div
+        class="
+          container
+          px-4 px-lg-5
+          d-flex
+          h-100
+          align-items-center
+          justify-content-center
+        "
+      >
         <section class="page-section clearfix">
-            <div class="container">
-                <div class="intro">
-                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                        <h2 class="section-heading mb-4">
-                            <span class="section-heading-upper">Are you sure you want to delete this Appointment?</span>
-                        </h2>
-                        <p><a href="{% url 'view_appointment' %}">No, back to my appointment</a></p>
-                        <div class="row">
-                            <div class="col-md-8 mt-3 offset-md-2">
-                                <form method="POST" name="form">
-        
-                                    {{form|crispy}}
-                                    {% csrf_token %}
-                                    <div class="intro-button mx-auto"><a href="/delete/{{ appointment.id }}">
-                                        <button class="btn btn-danger btn-primary btn-xl">Delete Appointment</button></a>
-                                    </div>
-                                </form>
-                            </div>                         
-                        </div>
-                    </div>
+          <div class="container">
+            <div class="intro">
+              <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper"
+                    >Are you sure you want to delete this Appointment?</span
+                  >
+                </h2>
+                <p>
+                  <a href="{% url 'view_appointment' %}"
+                    >No, back to my appointment</a
+                  >
+                </p>
+                <div class="row">
+                  <div class="col-md-8 mt-3 offset-md-2">
+                    <form method="POST" name="form">
+                      {{form|crispy}} {% csrf_token %}
+                      <div class="intro-button mx-auto">
+                        <a href="/delete/{{ appointment.id }}">
+                          <button class="btn btn-danger btn-primary btn-xl">
+                            Delete Appointment
+                          </button></a
+                        >
+                      </div>
+                    </form>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </section>
-        
-    </div>
-</section>
-
-
-{% endblock content %}
+      </div>
+    </section>
+    
+    {% endblock content %}
+    

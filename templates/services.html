@@ -1,66 +1,86 @@
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
-    <!-- Services-->
-    <section class="projects-section bg-light" id="projects">
-        <div class="container px-4 px-lg-5">
-            <!-- Services 1 Row-->
-            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'assets/img/bg-masthead.jpg' %}" alt="..." /></div>
-                <div class="col-xl-4 col-lg-5">
-                    <div class="featured-text text-center text-lg-left">
-                        <h4>Services and Fee's</h4>
-                        <p class="text-black-50 mb-0">​
-
-                            Are you feeling stressed? Anxious? Depressed? Then a warm, confidential space with a trained counsellor could help you manage these feelings and help you to overcome them. </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Services One Row-->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="{% static 'assets/img/demo-image-01.jpg' %}" alt="..." /></div>
-                <div class="col-lg-6">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white">Individuals and Couples</h4>
-                                <p class="mb-0 text-white-50">Individuals: 
-                                    Initial 50 minute assessment session 50euro/£45. 
-                                    Weekly 50 minute session 50euro/£45 </p>
-                                    <br>
-                                <p  class="mb-0 text-white-50">
-                                    Couples: Initial 50 minute assessment 70euro/£65 
-                                    Weekly 50 minute sessions 70euro/£65</p>  
-                                <hr class="d-none d-lg-block mb-0 ms-0" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Services Two Row-->
-            <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="{% static 'assets/img/demo-image-02.jpg' %}" alt="..." /></div>
-                <div class="col-lg-6 order-lg-first">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white">Online and Students</h4>
-                                <p class="mb-0 text-white-50">​
-                                    Online Counselling: 
-                                    Email, Instant Messaging, Web Cam
-                                    Initial 50 minute assessment session 50euro/£45. 
-                                    Weekly 50 minute session 50euro/£45</p>
-                                    <br>
-                                    <p class="mb-0 text-white-50">
-                                    Students: Student rates available for those 
-                                    who have to undertake personal therapy as a course requirement.
-                                        </p>
-                                <hr class="d-none d-lg-block mb-0 me-0" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{% extends "base.html" %} {% load static %} {% block content %}
+<!-- Services-->
+<section class="projects-section bg-light" id="projects">
+  <div class="container px-4 px-lg-5">
+    <!-- Services 1 Row-->
+    <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+      <div class="col-xl-8 col-lg-7">
+        <img
+          class="img-fluid mb-3 mb-lg-0"
+          src="{% static 'assets/img/bg-masthead.jpg' %}"
+          alt="..."
+        />
+      </div>
+      <div class="col-xl-4 col-lg-5">
+        <div class="featured-text text-center text-lg-left">
+          <h4>Services and Fee's</h4>
+          <p class="text-black-50 mb-0">
+            ​ Are you feeling stressed? Anxious? Depressed? Then a warm,
+            confidential space with a trained counsellor could help you manage
+            these feelings and help you to overcome them.
+          </p>
         </div>
-    </section>
-{% endblock %}  
+      </div>
+    </div>
+    <!-- Services One Row-->
+    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+      <div class="col-lg-6">
+        <img
+          class="img-fluid"
+          src="{% static 'assets/img/demo-image-01.jpg' %}"
+          alt="..."
+        />
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4 class="text-white">Individuals and Couples</h4>
+              <p class="mb-0 text-white-50">
+                Individuals: Initial 50 minute assessment session 50euro/£45.
+                Weekly 50 minute session 50euro/£45
+              </p>
+              <br />
+              <p class="mb-0 text-white-50">
+                Couples: Initial 50 minute assessment 70euro/£65 Weekly 50
+                minute sessions 70euro/£65
+              </p>
+              <hr class="d-none d-lg-block mb-0 ms-0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services Two Row-->
+    <div class="row gx-0 justify-content-center">
+      <div class="col-lg-6">
+        <img
+          class="img-fluid"
+          src="{% static 'assets/img/demo-image-02.jpg' %}"
+          alt="..."
+        />
+      </div>
+      <div class="col-lg-6 order-lg-first">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-right">
+              <h4 class="text-white">Online and Students</h4>
+              <p class="mb-0 text-white-50">
+                ​ Online Counselling: Email, Instant Messaging, Web Cam Initial
+                50 minute assessment session 50euro/£45. Weekly 50 minute
+                session 50euro/£45
+              </p>
+              <br />
+              <p class="mb-0 text-white-50">
+                Students: Student rates available for those who have to
+                undertake personal therapy as a course requirement.
+              </p>
+              <hr class="d-none d-lg-block mb-0 me-0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
