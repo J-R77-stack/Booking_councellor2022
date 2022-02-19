@@ -11,7 +11,6 @@ class AppointmentForm(forms.ModelForm):
         model = Appointment
         fields = ('name', 'phone_number', 'email', 'appointment_date_and_time')
 
-
     def __init__(self, *args, **kwargs):
         """
         Add class, required field and DateTime picker
