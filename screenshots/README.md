@@ -180,4 +180,30 @@ I used the W3C Validators to check for errors in the HTML and CSS Files of the p
 4. views.py
 <img src="screenshots/views.png">
     
+## User Stories Evaluation
+To ensure that the project fulfils the goals set out in the user stories:
+  ### Site User Stories
+  1. As a site user I can understand the purpose of the site so that I can learn more about the business with ease.
+    * Once in the site the user is welcomed with an attractive and easy to navigate landing page with a fuctional Nav bar which takes them to the other pages of the site. The Hero Image holds an inspirational quote and a call to action button to book an appoointment straight away. The name of the councellor is easy to see in the top left hand corner. The user is also able to navigate from all pages to the councellors social media sites.  The user can click on the about services or contact tab in the nav bar to learn more about the business.
 
+<img src="screenshots/home1.png">
+
+<img src="screenshots/nav.png">
+
+<img src="screenshots/about1.png">
+
+<img src="screenshots/contactp.png">
+
+<img src="screenshots/service1.png">
+
+<img src="screenshots/service2.png">
+    
+<img src="screenshots/social.png">
+
+  2. As a site user I can easily navigate the site so that I can find what I'm looking for.
+  3. As a site user I can sign up for an account so that I can make a booking with the counsellor.
+  4. As a site user I can sign into my account so that I can view and change my appointment details.
+  5. As a site user I can sign out of my account so that I can keep my details safe.
+  6. As a site user I can send a message to the counsellor so that I can learn more about the counsellor and the benefits of therapy.
+  ### Administration User Stories
+  1. As a site administrator I can create, view, change and delete bookings so that I have control over my appointment system.
