@@ -242,9 +242,11 @@ To ensure that the project fulfils the goals set out in the user stories:
  16. Create 3 new folders on top level directory - media, static and templates.
  17. Create Procfile in top directory and add code with project name.
  18. Add, deployment commit and push to github.
- 19. Deploy project in Heroku in Deployment tab add github to deployment method. Looked for my github repository and connect heroku app, clicked on deploy branch twards the bottom of the page. waited for it to build.
+ 19. Deploy project in Heroku in Deployment tab add github to deployment method. Looked for my github repository and connect heroku app, clicked on deploy branch towards the bottom of the page. waited for it to build.
  20. oppened app at top of page to see successful deployment
  21. After completing the project I turn debug to False in setting.py and removed DISABLE_COLLECTSTATIC in Heroku config vars.
+ 22. I did a final deployment Git add, commit and push
+ 23. In Heroku, in deploy I hit the deploy branch button at bottom of the page and the final app was built.
 
  # Credits 
 
