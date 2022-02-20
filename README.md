@@ -188,8 +188,6 @@ To ensure that the project fulfils the goals set out in the user stories:
 
 <img src="screenshots/home1.png">
 
-<img src="screenshots/nav.png">
-
 <img src="screenshots/about1.png">
 
 <img src="screenshots/contactp.png">
@@ -201,9 +199,28 @@ To ensure that the project fulfils the goals set out in the user stories:
 <img src="screenshots/social.png">
 
   2. As a site user I can easily navigate the site so that I can find what I'm looking for.
-  3. As a site user I can sign up for an account so that I can make a booking with the counsellor.
+     * By using the Nav bar the site user can easily navigate the site
+    <img src="screenshots/nav.png">
+
+  3. As a site user I can sign up for an account so that I can make an appointment with the counsellor.
+     * The User can easily book an appointment with the councellor by clicking on the book tab in the nav bar or the call to action button on the Home or About pages. This will take them to the sign in page where they either can sign in using existing details or sign up for an account using the link (sign up) above the sign in form. They can only book an appointment if they're a registered user. The register link in the nav bar takes them to the sign up form and the log in link in the nav bar takes them to the sign in form as well. Once signed up or signed in the user is redirected back to the Home page where the Login and Register Links are replaced with Logout and Logged in as (username) There's also an new link called My appointments.
+    <img src="screenshots/signinapp.png">
+    <img src="screenshots/signupapp.png">
+
   4. As a site user I can sign into my account so that I can view and change my appointment details.
+     * Once logged in using the steps above the user can click on My appointments in the Nav bar which will take them to the view appointments page where they an view edit or delete appointments.
+    <img src="screenshots/table.png">
+    <img src="screenshots/deleteapp.png">
+    <img src="screenshots/editapp.png">
   5. As a site user I can sign out of my account so that I can keep my details safe.
+     * The user can sign out at anytime to keep details safe.
+     <img src="screenshots/signoutapp.png">
   6. As a site user I can send a message to the counsellor so that I can learn more about the counsellor and the benefits of therapy.
+     * The user can send a message to the councellor on the contact page to find out more information. (This feature is not yet functional)
+    <img src="screenshots/contactp.png">
   ### Administration User Stories
   1. As a site administrator I can create, view, change and delete bookings so that I have control over my appointment system.
+     * Once a site admin has been set up the user can log in to look at and change appointments.
+    <img src="screenshots/adminshot.png">
+    
+
