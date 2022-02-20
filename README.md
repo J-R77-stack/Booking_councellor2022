@@ -222,5 +222,46 @@ To ensure that the project fulfils the goals set out in the user stories:
   1. As a site administrator I can create, view, change and delete bookings so that I have control over my appointment system.
      * Once a site admin has been set up the user can log in to look at and change appointments.
     <img src="screenshots/adminshot.png">
-    
+
+# Deployment
+ 1. In the Gitpod Terminal install django, gunicorn, supporting libraries, requirements file and created Project and App.
+ 2. Create Heroku App
+ 3. In Resources tab in Heroku search for Heroku Postgres in the add ons and attached to project.
+ 4. In Heroku under settings click on Reaveal Config Vars and copy the DATABASE_URL text.
+ 5. In Gitpod create new env.py file on top level directory and import the os.
+ 6. In env.py set environment variables by adding the database url from Heroku.
+ 7. Add secret key to env.py and config vars in Heroku.
+ 8. In settings.py import os and set if statement to say that outside the development environment the environment variables must be used from env.py.
+ 9. In settings.py comment out DATABASES section and repleace with django database URL in env.py and Heroku config vars.
+ 10. Migrate changes using python3 manage.py migrate.
+ 11. Set static and media files to be stored on Cloundinary by copying API environment variable from cloundinary dashboard and adding to env.py and Heroku config vars.
+ 12. Add DISABLE_COLLECTSTATIC = 1 to Heroku config vars.
+ 13. Add Cloudinary libraries to installed apps.
+ 14. In settings.py set up static file storage, directory and root, media_url and default storage. Also set up templates directory.
+ 15. Add Heroku host name to ALLOWED_HOSTS and also localhost.
+ 16. Create 3 new folders on top level directory - media, static and templates.
+ 17. Create Procfile in top directory and add code with project name.
+ 18. Add, deployment commit and push to github.
+ 19. Deploy project in Heroku in Deployment tab add github to deployment method. Looked for my github repository and connect heroku app, clicked on deploy branch twards the bottom of the page. waited for it to build.
+ 20. oppened app at top of page to see successful deployment
+ 21. After completing the project I turn debug to False in setting.py and removed DISABLE_COLLECTSTATIC in Heroku config vars.
+
+ # Credits 
+
+ * Code Institutes two walk through projects were used as a base to build my own project. The 'Hello Django walkthrough' helped me to understand and build the CRUD fuctionalities and 'I think therefore I blog' helped me to understand and build the authentication and message fuctionality.
+
+ * The Greyscale Bootstrap theme was used from [Startbootstrap](http://startbootstrap.com/) as the structure and style of the project and to also make it responsive.
+
+ * I looked at and used images from [Pixabay](https://pixabay.com/)
+
+ * I researched datetimepickers for the booking form and settled on [Tempus Dominus](https://pypi.org/project/django-tempus-dominus/) which I found the easiest to impliment.
+
+ * I used [w3schools](https://www.w3schools.com/default.asp) and [Stack Overflow](https://stackoverflow.com/) for Problems with code syntax and functionality. I found alot of good answers there.
+
+ ## Acknowledgements
+
+ * My Mentor for support and feedback
+ * Code institute tutors for help with problems with my code
+ * Friends and family for checking the fuctionality of the website.
+
 
