@@ -81,3 +81,53 @@ Mike Wilkins Councelling is a fictional website for a Councellor. The site can b
    2. Email sent to user when asked councellor a question in the contact form to say he'll be in touch.
    3. Set up interactive blog app with information about mental health issues.
 
+  # Tecnologies Used
+    
+  ### Languages
+
+  1. [HTML5](https://en.wikipedia.org/wiki/HTML5)
+  2. [CSS](https://en.wikipedia.org/wiki/CSS)
+  3. [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+  ### Libaries Frameworks and Programs
+
+  1. [Bootstrap 5.1.3](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+      * Used to provide the framework and responsiveness.
+
+  2. [Django](https://www.djangoproject.com/)
+      * Used for fuctionality, the data model and database.
+
+  3. [JQuery](https://jquery.com/)
+      * Came with the Bootstrap theme and also used for the installed bootstrap Tempus Dominus Datetimepicker.
+
+  4. [Javascript](https://en.wikipedia.org/wiki/JavaScript) 
+      * Used for message pop ups and countdown.
+
+  5. [Google Fonts](https://fonts.google.com/)
+      * Main fonts being Nunito and Varela Round
+
+  6. [Font Awesome](https://fontawesome.com/)
+      * Used for Interactive social icons in footer and also for About page.
+
+  7. [Git](https://git-scm.com/)
+      * Used for version control.
+
+  8. [GitHub](https://github.com/)
+      * Used to store the code once pushed from Git.
+
+  9. [Balsamiq](https://balsamiq.com/)
+      * A wireframe program used to create the mock-ups.
+
+  10. [Microsoft Word](https://en.wikipedia.org/wiki/Microsoft_Word)
+      * Used for drawing up the data model.
+      <img src="screenshots/datamodel.png">
+
+  11. [Cloudinary](https://cloudinary.com/)
+      * Insalled but ended up not using as I found the images of the bootstrap greyscale theme very appropriate for the   design I was looking for for the project.
+
+  12. [SQLite3](https://en.wikipedia.org/wiki/SQLite)
+      * Used as this is the default database for Django.
+
+  13. [Heroku](https://www.heroku.com/)
+      * Used for Deployment and storage of app.
+
