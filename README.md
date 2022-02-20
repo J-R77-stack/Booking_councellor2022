@@ -131,3 +131,53 @@ Mike Wilkins Councelling is a fictional website for a Councellor. The site can b
   13. [Heroku](https://www.heroku.com/)
       * Used for Deployment and storage of app.
 
+# Testing
+
+I used the W3C Validators to check for errors in the HTML and CSS Files of the project and PEP8 online checker for the python code.
+
+  * [W3C URI Validator](https://validator.w3.org/#validate_by_uri)
+  * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+  * [PEP8](http://pep8online.com/)
+
+  ### HTML Validation
+
+  The About page had two errors that I couldnt find a solution for.
+  1. Bad value for attribute width 100% on element img.
+  2. Section lacks heading. Consider using h2-h6 elements.
+  <img src="screenshots/aboutcheck.png">
+  
+  The other pages also had the same error.
+  1. Section lacks heading. Consider using h2-h6 elements. I persume its bcause the bootstrap theme i used is for a one page landing page that one can scroll up and down so the h1-h6 elements are further up the page. So by breaking up the page as I did the the validator would be confused as its expecting the dom tree order.
+  <img src="screenshots/addappointment.png">
+  <img src="screenshots/blogcheck.png">
+  <img src="screenshots/contactcheck.png">
+  <img src="screenshots/deletecheck.png">
+  <img src="screenshots/editcheck.png">
+  <img src="screenshots/logincheck.png">
+  <img src="screenshots/logoutcheck.png">
+  <img src="screenshots/servicespage.png">
+  <img src="screenshots/signupcheck.png">
+  <img src="screenshots/viewappointmentcheck.png">
+
+### CSS Validation
+
+<img src="screenshots/csscheck.png">
+
+### PEP8 Validation
+
+1. admin.py
+<img src="screenshots/admin.png">
+
+2. forms.py
+<img src="screenshots/forms.png">
+
+3. models.py
+<img src="screenshots/models.png">
+
+4. urls.py
+<img src="screenshots/urls.png">
+
+4. views.py
+<img src="screenshots/views.png">
+    
+
