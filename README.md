@@ -123,7 +123,7 @@ Mike Wilkins Councelling is a fictional website for a Councellor. The site can b
       <img src="screenshots/datamodel.png">
 
   11. [Cloudinary](https://cloudinary.com/)
-      * Insalled but ended up not using as I found the images of the bootstrap greyscale theme very appropriate for the   design I was looking for for the project.
+      * Insalled and hosted a number of my images.
 
   12. [SQLite3](https://en.wikipedia.org/wiki/SQLite)
       * Used as this is the default database for Django.
