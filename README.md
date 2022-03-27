@@ -141,23 +141,8 @@ I used the W3C Validators to check for errors in the HTML and CSS Files of the p
 
   ### HTML Validation
 
-  The About page had two errors that I couldnt find a solution for.
-  1. Bad value for attribute width 100% on element img.
-  2. Section lacks heading. Consider using h2-h6 elements.
-  <img src="screenshots/aboutcheck.png">
+  <img src="screenshots/htmlcheck.png">
   
-  The other pages also had the same error.
-  1. Section lacks heading. Consider using h2-h6 elements. I persume its bcause the bootstrap theme i used is for a one page landing page that one can scroll up and down so the h1-h6 elements are further up the page. So by breaking up the page as I did the the validator would be confused as its expecting the dom tree order.
-  <img src="screenshots/addappointment.png">
-  <img src="screenshots/blogcheck.png">
-  <img src="screenshots/contactcheck.png">
-  <img src="screenshots/deletecheck.png">
-  <img src="screenshots/editcheck.png">
-  <img src="screenshots/logincheck.png">
-  <img src="screenshots/logoutcheck.png">
-  <img src="screenshots/servicespage.png">
-  <img src="screenshots/signupcheck.png">
-  <img src="screenshots/viewappointmentcheck.png">
 
 ### CSS Validation
 
