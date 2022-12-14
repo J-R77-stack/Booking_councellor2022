@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'django_bootstrap5',
+    'django-bootstrap-v5',
     'tempus_dominus',
     'crispy_forms',
     'crispy_bootstrap5',
