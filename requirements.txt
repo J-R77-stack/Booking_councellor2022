@@ -2,11 +2,13 @@ asgiref==3.5.2
 backports.zoneinfo==0.2.1
 beautifulsoup4==4.11.1
 cloudinary==1.30.0
+crispy-bootstrap5==0.7
 dj-database-url==1.2.0
 dj3-cloudinary-storage==0.0.6
 Django==3.2
 django-allauth==0.51.0
 django-bootstrap-v5==1.0.11
+django-crispy-forms==1.14.0
 django-tempus-dominus==5.1.2.17
 gunicorn==20.1.0
 oauthlib==3.2.2
