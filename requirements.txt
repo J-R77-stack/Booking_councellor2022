@@ -11,6 +11,7 @@ django-bootstrap-v5==1.0.11
 django-crispy-forms==1.14.0
 django-tempus-dominus==5.1.2.17
 gunicorn==20.1.0
+jsonschema==3.0.2
 oauthlib==3.2.2
 psycopg2==2.9.5
 PyJWT==2.6.0
