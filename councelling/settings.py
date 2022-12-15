@@ -54,7 +54,6 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'bootstrap5',
     'tempus_dominus',
     'crispy_forms',
     'crispy_bootstrap5',
@@ -66,9 +65,7 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 
 TEMPUS_DOMINUS_LOCALIZE = False
 
